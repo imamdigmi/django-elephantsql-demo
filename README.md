@@ -2,6 +2,8 @@
 DaaS using Django and ElephantSQL demo
 
 
+![ElephantSQL Portal](elephantsql-portal.png)
+
 ## Setup
 Activate virtual envirounment
 ```bash
