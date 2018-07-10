@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-import dj_database_url
+# import dj_database_url
 import django_heroku
 
 
@@ -86,10 +86,10 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bfloebnu',
-        'USER': 'bfloebnu',
-        'PASSWORD': 'bWsB91e90OD3IqDquvKBKNEzFSp_2hLf',
-        'HOST': 'baasu.db.elephantsql.com',
+        'NAME': 'hoqpftjb',
+        'USER': 'hoqpftjb',
+        'PASSWORD': 'wH_noV7bSb5G6P0ihA2YvqPOYZD4yXEI',
+        'HOST': 'stampy.db.elephantsql.com',
         'PORT': '',
     }
 }
@@ -128,7 +128,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Change 'default' database configuration with $DATABASE_URL.
-DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
+# DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
