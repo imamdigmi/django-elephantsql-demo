@@ -61,9 +61,9 @@ Deploy to heroku
 git push heroku master
 ```
 
-Run app on heroku
+Open app on heroku
 ```bash
-heroku run python manage.py migrate
+heroku open
 ```
 
 Or, if you wanna run locally
