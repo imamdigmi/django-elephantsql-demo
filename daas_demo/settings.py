@@ -17,13 +17,13 @@ import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = 'yf@w4pi$$xc2ggdtbrzanf=)1164n=5+h)-t0qau636sr%tdsg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -127,6 +127,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Change 'default' database configuration with $DATABASE_URL.
+DATABASES['default'].update(dj_database_url.config(conn_max_age=500, ssl_require=True))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
