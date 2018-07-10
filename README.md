@@ -83,5 +83,4 @@ Open [http://localhost:8000](http://localhost:8000) with your web browser. You s
 Login to admin page, navigate to [http://localhost:8000/admin](http://localhost:8000/admin) insert username and password as follow :
 
 **Username :** ayam
-
 **Password :** ayambakar
