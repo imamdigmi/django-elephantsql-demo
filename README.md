@@ -44,4 +44,38 @@ DATABASES = {
 python manage.py runserver
 ```
 
-Navigate to [localhost:8000](http://127.0.0.1:8000/)
+Navigate to [localhost:8000](http://localhost:8000)
+
+---
+
+# Deploy to Heroku
+If you wanna deploy this simple app to Heroku, follow this step
+
+Create Heroku instance
+```bash
+heroku create
+```
+
+Deploy to heroku
+```bash
+git push heroku master
+```
+
+Run app on heroku
+```bash
+heroku run python manage.py migrate
+```
+
+Or, if you wanna run locally
+
+If you’re on Microsoft Windows system, run this:
+```bash
+heroku local web -f Procfile.windows
+```
+
+If you’re on a Unix system, just use the default `Procfile` by running:
+```bash
+heroku local web
+```
+
+Open [http://localhost:8000](http://localhost:8000) with your web browser. You should see your app running locally.
